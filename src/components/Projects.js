@@ -1,44 +1,56 @@
 import React from "react";
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col, Tab, Nav, Image } from "react-bootstrap";
 import { ProjectCards } from "./ProjectCards";
+import { AchievementCards } from "./AchievementCards";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import payr from "../assets/img/payr.png";
+import textUtils from "../assets/img/text-utils.png";
+import cyient from "../assets/img/cyeintWinner.png";
+import lichess from "../assets/img/lichess3.png";
+import kanban from "../assets/img/kanban.png";
+import portfolio from "../assets/img/portfolio.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      ind: 0,
+      title: "Payr Landing Page",
+      description: "Design & Development of Landing Page and the creation of student and mentor dashboard.",
+      imgUrl: payr,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      ind: 1,
+      title: "Text Utils",
+      description: "App serving the functionality of text manipulation according to the user",
+      imgUrl: textUtils,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      ind: 2,
+      title: "LichessAPI- Top Chess Players",
+      description: "Results of the top 50 chess players around the world and their rating history",
+      imgUrl: lichess,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      ind: 3,
+      title: "Kanban Board",
+      description: "Displaying the tasks assigned to the employees according to their custom view (by Priority, Alphabetically, Title)",
+      imgUrl: kanban,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      ind: 4,
+      title: "Portfolio Website",
+      description: "Design & Development of personal portfolio website",
+      imgUrl: portfolio,
     },
+  ];
+  const achievements = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      ind: 0,
+      title: "CyientifIQ Global Hackathon",
+      description: "Winner of the CyientifIQ Innovation League Global Hackathon under the theme ‘Solving Sustainability Challenges’ out of 5536 teams all over the world.",
+      imgUrl: cyient,
     },
   ];
 
@@ -54,11 +66,9 @@ export const Projects = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>Projects</h2>
+                  <h2>Projects and Achievements</h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Doloremque accusantium nihil praesentium explicabo pariatur.
-                    Rem, natus sunt temporibus.
+                    Here are a few technical projects and achievements from hackathons that I've been involved in during my college journey.
                   </p>
                 </div>
               )}
@@ -66,17 +76,14 @@ export const Projects = () => {
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav
                 variant="pills"
-                className="nav-pills mb-5 justify-content-center alig-items-center"
+                className="nav-pills mb-5 justify-content-center align-items-center"
                 id="pills-tab"
               >
                 <Nav.Item>
-                  <Nav.Link eventKey="first">Tab One</Nav.Link>
+                  <Nav.Link eventKey="first">My Projects</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second">Tab Two</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="third">Tab Three</Nav.Link>
+                  <Nav.Link eventKey="second">Achievements</Nav.Link>
                 </Nav.Item>
               </Nav>
               <TrackVisibility offset={1000} partialVisibility>
@@ -90,33 +97,29 @@ export const Projects = () => {
                     <Tab.Pane eventKey="first">
                       <Row>
                         {projects.map((project, index) => {
-                          return <ProjectCards key={index} {...project} />;
+                          return (
+                            <Col className="d-flex" key={index} xs={12} md={6} lg={4}>
+                              <ProjectCards {...project} />
+                            </Col>
+                          );
                         })}
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      {" "}
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Cumque quam, quod neque provident velit, rem explicabo
-                        excepturi id illo molestiae blanditiis, eligendi dicta
-                        officiis asperiores delectus quasi inventore debitis
-                        quo.
-                      </p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      {" "}
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Cumque quam, quod neque provident velit, rem explicabo
-                        excepturi id illo molestiae blanditiis, eligendi dicta
-                        officiis asperiores delectus quasi inventore debitis
-                        quo.
-                      </p>
+                      <Row className="justify-content-center">
+                        {achievements.map((achievement, index) => {
+                          return (
+                            <Col key={index} xs={12} md={8} lg={4}>
+                              <AchievementCards {...achievement} />
+                            </Col>
+                          );
+                        })}
+                      </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 )}
               </TrackVisibility>
+
             </Tab.Container>
           </Col>
         </Row>

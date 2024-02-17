@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import logo from "../assets/img/logo.svg";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
-import { HashLink } from "react-router-hash-link";
+import logo from "../assets/img/logo-dhruv.svg";
+import navIcon1 from "../assets/img/linkedin.svg";
+import navIcon2 from "../assets/img/leetcode-svgrepo-com.svg";
+import navIcon3 from "../assets/img/GitHub-Icon-White-Logo.wine.svg";
 import { BrowserRouter as Router } from "react-router-dom";
 
 export const NavBar = () => {
@@ -33,7 +32,7 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/" className="logo">
             <img src={logo} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -48,7 +47,7 @@ export const NavBar = () => {
                 }
                 onClick={() => onUpdateActiveLink("home")}
               >
-                Home
+                About
               </Nav.Link>
               <Nav.Link
                 href="#skills"
@@ -57,7 +56,7 @@ export const NavBar = () => {
                 }
                 onClick={() => onUpdateActiveLink("skills")}
               >
-                Skills
+                Tech Stack
               </Nav.Link>
               <Nav.Link
                 href="#project"
@@ -73,25 +72,19 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#">
+                <a href="https://www.linkedin.com/in/dhruv-dua-047893192/" target="_blank">
                   <img src={navIcon1} alt="" />
                 </a>
-                <a href="#">
+                <a href="http://leetcode.com/ddhruvdua/" target="_blank">
                   <img src={navIcon2} alt="" />
                 </a>
-                <a href="#">
+                <a href="https://github.com/DhruvDua1105" target="_blank">
                   <img src={navIcon3} alt="" />
                 </a>
               </div>
-              <HashLink to="#connect">
-                <button
-                  id="toConnect"
-                  className="vvd"
-                  onClick={() => console.log("connect")}
-                >
-                  <span>Let's Connect</span>
-                </button>
-              </HashLink>
+              <button>
+                <a href="https://bit.ly/DhruvDua_resume_NSUT2024" target="_blank">Resume</a>
+              </button>
             </span>
           </Navbar.Collapse>
         </Container>
