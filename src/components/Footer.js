@@ -20,13 +20,13 @@ export const Footer = () => {
           </Col>
           <Col md={4} lg={6} className="text-center text-lg-end text-md-end">
             <div className="footer-icon">
-              <a href="https://www.linkedin.com/in/dhruv-dua-047893192/" target="_blank">
+              <a href="https://www.linkedin.com/in/dhruv-dua-047893192/" target="_blank" rel="noreferrer">
                 <img src={navIcon1} alt="" />
               </a>
-              <a href="http://leetcode.com/ddhruvdua/" target="_blank">
+              <a href="http://leetcode.com/ddhruvdua/" target="_blank" rel="noreferrer">
                 <img src={navIcon2} alt="" />
               </a>
-              <a href="https://github.com/DhruvDua1105" target="_blank">
+              <a href="https://github.com/DhruvDua1105" target="_blank" rel="noreferrer">
                 <img src={navIcon3} alt="" />
               </a>
             </div>

@@ -72,18 +72,18 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/dhruv-dua-047893192/" target="_blank">
+                <a href="https://www.linkedin.com/in/dhruv-dua-047893192/" target="_blank" rel="noreferrer">
                   <img src={navIcon1} alt="" />
                 </a>
-                <a href="http://leetcode.com/ddhruvdua/" target="_blank">
+                <a href="http://leetcode.com/ddhruvdua/" target="_blank" rel="noreferrer">
                   <img src={navIcon2} alt="" />
                 </a>
-                <a href="https://github.com/DhruvDua1105" target="_blank">
+                <a href="https://github.com/DhruvDua1105" target="_blank" rel="noreferrer">
                   <img src={navIcon3} alt="" />
                 </a>
               </div>
               <button>
-                <a href="https://bit.ly/DhruvDua_resume_NSUT2024" target="_blank">Resume</a>
+                <a href="https://bit.ly/DhruvDua_resume_NSUT2024" target="_blank" rel="noreferrer">Resume</a>
               </button>
             </span>
           </Navbar.Collapse>

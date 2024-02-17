@@ -55,47 +55,47 @@ export const Skills = () => {
                 autoPlaySpeed={1000}
               >
                 <div className="item">
-                  <img src={c} alt="Image" />
+                  <img src={c} alt="Image1" />
                   <h5>C++</h5>
                 </div>
                 <div className="item">
-                  <img src={html} alt="Image" />
+                  <img src={html} alt="Image2" />
                   <h5>HTML</h5>
                 </div>
                 <div className="item">
-                  <img src={css} alt="Image" />
+                  <img src={css} alt="Image3" />
                   <h5>CSS</h5>
                 </div>
                 <div className="item">
-                  <img src={js} alt="Image" />
+                  <img src={js} alt="Image4" />
                   <h5>Javascript</h5>
                 </div>
                 <div className="item">
-                  <img src={reactJS} alt="Image" />
+                  <img src={reactJS} alt="Image5" />
                   <h5>ReactJS</h5>
                 </div>
                 <div className="item">
-                  <img src={tailwind} alt="Image" />
+                  <img src={tailwind} alt="Image6" />
                   <h5>Tailwind CSS</h5>
                 </div>
                 <div className="item">
-                  <img src={bootstrap} alt="Image" />
+                  <img src={bootstrap} alt="Image7" />
                   <h5>Bootstrap</h5>
                 </div>
                 <div className="item">
-                  <img src={nodejs} alt="Image" />
+                  <img src={nodejs} alt="Image8" />
                   <h5>NodeJS</h5>
                 </div>
                 <div className="item">
-                  <img src={mongodb} alt="Image" />
+                  <img src={mongodb} alt="Image9" />
                   <h5>MongoDB</h5>
                 </div>
                 <div className="item">
-                  <img src={illustrator} alt="Image" />
+                  <img src={illustrator} alt="Image10" />
                   <h5>Illustrator</h5>
                 </div>
                 <div className="item">
-                  <img src={photoshop} alt="Image" />
+                  <img src={photoshop} alt="Image11" />
                   <h5>Photoshop</h5>
                 </div>
               </Carousel>
@@ -104,7 +104,7 @@ export const Skills = () => {
           </Col>
         </Row>
       </Container>
-      <img src={colorSharp} alt="Image" className="background-image-left" />
+      <img src={colorSharp} alt="Image12" className="background-image-left" />
     </section>
   );
 };

@@ -28,7 +28,7 @@ export const AchievementCards = ({ ind, title, description, imgUrl }) => {
         </div>
       </div>
       <span className="project-text">
-        <button ><a href={buttonLink} target="_blank">{buttonText}</a></button>
+        <button ><a href={buttonLink} target="_blank" rel="noreferrer">{buttonText}</a></button>
       </span>
     </Col>
   );

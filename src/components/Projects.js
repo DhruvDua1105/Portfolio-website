@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Tab, Nav, Image } from "react-bootstrap";
+import { Container, Row, Col, Tab, Nav} from "react-bootstrap";
 import { ProjectCards } from "./ProjectCards";
 import { AchievementCards } from "./AchievementCards";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -124,7 +124,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img src={colorSharp2} alt="Image" className="background-img-right" />
+      <img src={colorSharp2} alt="bgimage" className="background-img-right" />
     </section>
   );
 };
