@@ -97,7 +97,7 @@ body select:focus {
 
 
 nav.navbar {
-  padding: 10px 0px;
+  padding: 18px 0px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -132,7 +132,6 @@ nav.navbar {
 
 }
 
-
 nav.navbar a.navbar-brand {
   width: 9%;
 }
@@ -143,7 +142,7 @@ nav.navbar a.navbar-brand {
   color: #fff !important;
   letter-spacing: 0.8px;
   padding: 0 22px;
-  font-size: 16px;
+  font-size: 18px;
   opacity: 0.9;
 }
 
@@ -196,8 +195,8 @@ span.navbar-text {
 }
 
 .social-icon a {
-  width: 32px;
-  height: 32px;
+  width: 35px;
+  height: 35px;
   background: rgba(217, 217, 217, 0.1);
   display: inline-flex;
   border-radius: 50%;
@@ -209,7 +208,7 @@ span.navbar-text {
 }
 
 .social-icon a img {
-  width: 40%;
+  width: 45%;
   z-index: 1;
   transition: 0.3s ease-in-out;
 }
@@ -233,7 +232,6 @@ span.navbar-text {
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .social-icon a {
     width: 28px;
@@ -260,7 +258,7 @@ span.navbar-text {
 
 
 .navbar-text button a {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   color: #fff;
   border: 1px solid #fff;
@@ -359,7 +357,7 @@ nav.navbar .navbar-toggler[aria-expanded=true] .navbar-toggle-icon {
 /* Default styles */
 .banner {
   margin-top: 0;
-  padding: 180px 0 100px 0;
+  padding: 200px 0 100px 0;
   background-image: url("./assets/img/Grid.svg");
   background-position: top center;
   background-size: cover;
@@ -401,7 +399,7 @@ nav.navbar .navbar-toggler[aria-expanded=true] .navbar-toggle-icon {
   font-weight: 700;
   letter-spacing: 0.8;
   line-height: 1;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   display: block;
 }
 
@@ -410,7 +408,7 @@ nav.navbar .navbar-toggler[aria-expanded=true] .navbar-toggle-icon {
   .banner h1 {
     font-size: 50px;
     /* Adjust font size for smaller screens */
-    margin-bottom: 15px;
+    margin-bottom: 60px;
     /* Adjust margin for smaller screens */
   }
 }
@@ -419,7 +417,7 @@ nav.navbar .navbar-toggler[aria-expanded=true] .navbar-toggle-icon {
   .banner h1 {
     font-size: 45px;
     /* Further adjust font size for even smaller screens */
-    margin-bottom: 10px;
+    margin-bottom: 100px;
     /* Further adjust margin for even smaller screens */
   }
 }
@@ -430,11 +428,10 @@ nav.navbar .navbar-toggler[aria-expanded=true] .navbar-toggle-icon {
   color: #b8b8b8;
   font-size: 18px;
   letter-spacing: 0.8px;
-  line-height: 1.7em;
+  line-height: 1.8em;
   width: 96%;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .banner p {
     font-size: 16px;
@@ -449,12 +446,11 @@ nav.navbar .navbar-toggler[aria-expanded=true] .navbar-toggle-icon {
   }
 }
 
-
 .banner button {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
-  margin-top: 40px;
+  margin-top: 50px; /* Adjusted margin-top value */
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
@@ -471,9 +467,18 @@ nav.navbar .navbar-toggler[aria-expanded=true] .navbar-toggle-icon {
   margin-left: 25px;
 }
 
+.txt-rotate {
+  position: absolute;
+  min-height: 100px; /* Added min-height property */
+  height: auto; /* Changed height to auto */
+}
 
-.text-rotate>.wrap {
+.text-rotate > .wrap {
   border-right: 0.08em solid #666;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
 }
 
 .skill {
@@ -1009,7 +1014,7 @@ nav.navbar .navbar-toggler[aria-expanded=true] .navbar-toggle-icon {
 }
 
 .footer {
-  padding: 40px 0 40px 0;
+  padding: 70px 0 70px 0;
   background-image: url("./assets/img/footer-bg.png");
   background-position: center center;
   background-size: cover;
@@ -1022,7 +1027,7 @@ nav.navbar .navbar-toggler[aria-expanded=true] .navbar-toggle-icon {
 
 .footer h6 {
   font-weight: 800;
-  font-size: 16px;
+  font-size: 20px;
   color: #b8b8b8;
   letter-spacing: 0.5px;
   margin-top: 20px;
@@ -1031,13 +1036,19 @@ nav.navbar .navbar-toggler[aria-expanded=true] .navbar-toggle-icon {
 
 .footer span {
   font-weight: 300;
-  font-size: 12px;
+  font-size: 16px;
   font-style: italic;
   color: #b8b8b8;
   letter-spacing: 0.5px;
   line-height: normal;
 }
 
+.footer span a{
+  color: #b8b8b8;
+}
+.footer span a:hover{
+  color: #c2c2c2;
+}
 
 .footer-icon {
   display: inline-block;
@@ -1047,8 +1058,8 @@ nav.navbar .navbar-toggler[aria-expanded=true] .navbar-toggle-icon {
 }
 
 .footer-icon a {
-  width: 32px;
-  height: 32px;
+  width: 38px;
+  height: 38px;
   background: rgba(217, 217, 217, 0.1);
   display: inline-flex;
   border-radius: 50%;
@@ -1060,7 +1071,7 @@ nav.navbar .navbar-toggler[aria-expanded=true] .navbar-toggle-icon {
 }
 
 .footer-icon a img {
-  width: 40%;
+  width: 42%;
   z-index: 1;
   transition: 0.3s ease-in-out;
 }

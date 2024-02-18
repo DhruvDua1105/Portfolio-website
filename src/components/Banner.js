@@ -9,7 +9,7 @@ export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(170 - Math.random() * 100);
   const toRotate = [
     "Full-Stack Developer",
     "Front-end Developer",
@@ -48,7 +48,7 @@ export const Banner = () => {
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setDelta(200);
+      setDelta(90);
     }
   };
 
@@ -65,7 +65,7 @@ export const Banner = () => {
                     <span className="wave">👋</span> <br />
                     <span
                       className="txt-rotate"
-                      data-period="1000"
+                      data-period="500"
                       data-rotate='["Full Stack Developer","Front-end Developer", "Back-end Developer", "C++ Programmer"]'
                     >
                       <span className="wrap">{text}</span>
@@ -84,7 +84,7 @@ export const Banner = () => {
             </TrackVisibility>
           </Col>
           <Col xs={12} md={12} xl={5} className="d-flex justify-content-center align-items-center" style={{ overflow: "hidden" }}>
-            <div className="customimg" style={{ margin:"20px", width: "300px", height: "300px", border: '3px solid white', borderRadius: "50%", backgroundImage: `url(${bannerImg})`, backgroundSize: 'cover', backgroundPosition: '50% 50%' }}></div>
+            <div className="customimg" style={{ margin:"20px", width: "320px", height: "320px", border: '3px solid white', borderRadius: "50%", backgroundImage: `url(${bannerImg})`, backgroundSize: 'cover', backgroundPosition: '50% 0%' }}></div>
           </Col>
         </Row>
       </Container>

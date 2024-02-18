@@ -11,12 +11,12 @@ export const Footer = () => {
         <Row className="align-items-center">
           <Col xs={12} md={5} lg={3} className="text-center text-lg-start text-md-start">
             <h6>EMAIL</h6>
-            <span>dhruv.dua.NSUT2024@gmail.com
+            <span><a href="mailto:dhruv.dua.NSUT2024@gmail.com">dhruv.dua.NSUT2024@gmail.com</a>
             </span>
           </Col>
           <Col xs={12} md={3} lg={3} className="text-center text-lg-start text-md-start">
             <h6>CALL</h6>
-            <span>+91-9205762346</span>
+            <span><a href="tel:+91-9205762346">+91-9205762346</a></span>
           </Col>
           <Col md={4} lg={6} className="text-center text-lg-end text-md-end">
             <div className="footer-icon">
