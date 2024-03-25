@@ -26,6 +26,10 @@ export const ProjectCards = ({ ind, title, description, imgUrl }) => {
       buttonText = "Deployed Link";
       buttonLink = "/";
       break;
+    case 5:
+      buttonText = "Deployed Link";
+      buttonLink = "https://movies4u-23091.web.app/";
+      break;
     default:
       buttonText = "Code";
       buttonLink = "#";

@@ -83,7 +83,7 @@ export const NavBar = () => {
                 </a>
               </div>
               <button>
-                <a href="https://bit.ly/DhruvDua_resume_NSUT2024" target="_blank" rel="noreferrer">Resume</a>
+                <a href="https://bit.ly/DhruvDua_Resume" target="_blank" rel="noreferrer">Resume</a>
               </button>
             </span>
           </Navbar.Collapse>

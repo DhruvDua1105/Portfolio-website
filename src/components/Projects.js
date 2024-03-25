@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Tab, Nav} from "react-bootstrap";
+import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCards } from "./ProjectCards";
 import { AchievementCards } from "./AchievementCards";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -9,6 +9,7 @@ import cyient from "../assets/img/cyeintWinner.png";
 import lichess from "../assets/img/lichess3.png";
 import kanban from "../assets/img/kanban.png";
 import portfolio from "../assets/img/portfolio.png";
+import movie from "../assets/img/movie.png"
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -43,6 +44,12 @@ export const Projects = () => {
       title: "Portfolio Website",
       description: "Design & Development of personal portfolio website",
       imgUrl: portfolio,
+    },
+    {
+      ind: 5,
+      title: "Movies App",
+      description: "A Movie App that shows the recommended and trending movies/TV-Series, with a bookmark feature",
+      imgUrl: movie,
     },
   ];
   const achievements = [
